@@ -65,7 +65,7 @@ public class HttpHeaderParser {
             String[] tokens = headerValue.split(",");
             for (int i = 0; i < tokens.length; i++) {
                 String token = tokens[i].trim();
-                if (token.equals("no-cache") || token.equals("no-store")) {
+                if (/**token.equals("no-cache") ||**/ token.equals("no-store")) {
                     return null;
                 } else if (token.startsWith("max-age=")) {
                     try {
